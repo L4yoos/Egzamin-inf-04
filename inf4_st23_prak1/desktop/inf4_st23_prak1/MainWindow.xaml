@@ -1,0 +1,57 @@
+﻿<Window x:Class="inf4_st23_prak1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:inf4_st23_prak1"
+        mc:Ignorable="d"
+        Title="Dodaj pracownika" Background="LightSteelBlue" Height="450" Width="700">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+
+        <GroupBox Header="Dane Pracownika" FontSize="14" Margin="5,5,157,102" Padding="10" Grid.ColumnSpan="2" Grid.Column="0">
+            <StackPanel>
+                <Label Content="Imię: "/>
+                <TextBox Width="200" x:Name="imieBox"/>
+
+                <Label Content="Nazwisko: "/>
+                <TextBox Width="200" x:Name="nazwiskoBox"/>
+
+                <Label Content="Stanowisko: "/>
+                <ComboBox Width="200" x:Name="stanowiskoBox">
+                    <ComboBoxItem Content="Kierownik" />
+                    <ComboBoxItem Content="Starszy programista" />
+                    <ComboBoxItem Content="Młodszy programista" />
+                    <ComboBoxItem Content="Tester" />
+                </ComboBox>
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Header="Generowanie hasła" Grid.Column="2" FontSize="14" Margin="5,5,5,102" Padding="10">
+            <StackPanel>
+                <Grid Height="29" Width="366">
+                    <Label Content="Ile znaków? " Margin="0,0,229,0"/>
+                </Grid>
+                <TextBox Width="200" RenderTransformOrigin="0.5,0.5" Name="PasswordLength" >
+                    <TextBox.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform AngleX="0"/>
+                            <RotateTransform/>
+                            <TranslateTransform X="0"/>
+                        </TransformGroup>
+                    </TextBox.RenderTransform>
+                </TextBox>
+                <CheckBox Content="Małe i wielkie litery" IsChecked="True" x:Name="Letters" />
+                <CheckBox Content="Cyfry" x:Name="Digits"/>
+                <CheckBox Content="Znaki specjalne" x:Name="Special"/>
+                <Button Content="Generuj hasło" Background="SteelBlue" Foreground="White" Width="120" Margin="5" Click="generatePassword_Click"/>
+            </StackPanel>
+        </GroupBox>
+        <Button Content="Zatwierdź" Background="SteelBlue" Grid.Column="1" Foreground="White" HorizontalAlignment="Left" Width="200" Height="20" VerticalAlignment="Bottom" Margin="28,0,0,0" Grid.ColumnSpan="2" Click="Confirm_Click"/>
+    </Grid>
+</Window>

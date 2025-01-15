@@ -1,0 +1,20 @@
+<div class="container">
+  <h1>Formularz dodawania filmu</h1>
+  <form>
+    <div class="mb-3">
+      <label for="tytul" class="form-label">Tytuł filmu</label>
+      <input type="text" id="tytul" class="form-control" [(ngModel)]="film.tytul" name="tytul" />
+    </div>
+    <div class="mb-3">
+      <label for="kategoria" class="form-label">Rodzaj</label>
+      <select id="kategoria" class="form-select" [(ngModel)]="film.kategoria" name="kategoria">
+        <option value="">-- Wybierz --</option>
+        <option value="1">Komedia</option>
+        <option value="2">Obyczajowy</option>
+        <option value="3">Sensacyjny</option>
+        <option value="4">Horror</option>
+      </select>
+    </div>
+    <button type="button" class="btn btn-primary" (click)="dodajFilm()">Dodaj</button>
+  </form>
+</div>

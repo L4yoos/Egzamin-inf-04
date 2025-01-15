@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "inf4_st24_prak1/1.0.0": {
+        "runtime": {
+          "inf4_st24_prak1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "inf4_st24_prak1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

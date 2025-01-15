@@ -1,0 +1,25 @@
+﻿<Window x:Class="inf4_cz24_prak2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:inf4_cz24_prak2"
+        mc:Ignorable="d"
+        Title="MojeDźwięki, Wykonał: 000000000000" Background="SeaGreen" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="312,106,0,0" TextWrapping="Wrap" Text="Artysta" Name="TxtArtysta" FontSize="50" VerticalAlignment="Top" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="312,180,0,0" TextWrapping="Wrap" Text="Tytul" Name="TxtTytul" FontSize="30" VerticalAlignment="Top" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="400,244,0,0" TextWrapping="Wrap" Text="Rok" Name="TxtUtwory" FontSize="20" VerticalAlignment="Top" Foreground="#61D918"/>
+        <TextBlock HorizontalAlignment="Left" Margin="312,244,0,0" TextWrapping="Wrap" Text="Utwory" Name="TxtRok" FontSize="20" VerticalAlignment="Top" Foreground="#61D918"/>
+        <TextBlock HorizontalAlignment="Left" Margin="134,303,0,0" TextWrapping="Wrap" Text="Pobrania" Name="TxtPobrania" FontSize="20" VerticalAlignment="Top" Foreground="#61D918"/>
+        <Button Content="Pobierz"  HorizontalAlignment="Left" Margin="241,305,0,0" VerticalAlignment="Top" Background="#61D918" FontSize="20" FontWeight="Bold" Click="Btn_Pobierz"/>
+        <Image Source="images/obraz.png" HorizontalAlignment="Left" Margin="134,124,0,0" VerticalAlignment="Top" Height="150" Width="155" />
+        <Button Margin="675,0,0,0" Width="100" Height="70" Click="Btn_Prawo">
+            <Image Source="images/obraz2.png" Stretch="Uniform" />
+        </Button>
+        <Button Margin="-675,0,0,0" Width="100" Height="70" Click="Btn_Lewo">
+            <Image Source="images/obraz3.png" Stretch="Uniform" />
+        </Button>
+
+    </Grid>
+</Window>

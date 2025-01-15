@@ -1,0 +1,24 @@
+﻿<Window x:Class="inf4_st24_prak1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:inf4_st24_prak1"
+        mc:Ignorable="d"
+        Title="Wprowadzenie danych do paszportu. Wykonał: 0000000000000" Background="#5F9EA0" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="48,46,0,0" TextWrapping="Wrap" Text="Numer" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="48,85,0,0" TextWrapping="Wrap" Text="Imię" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="48,126,0,0" TextWrapping="Wrap" Text="Nazwisko" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="144,44,0,0" TextWrapping="Wrap" Text="" Name="numerBox" LostFocus="zmienObrazy" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="144,83,0,0" TextWrapping="Wrap" Text="" Name="imieBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="144,126,0,0" TextWrapping="Wrap" Text="" Name="nazwiskoBox" VerticalAlignment="Top" Width="120"/>
+        <Image HorizontalAlignment="Left" Name="obrazOsoba" Height="180" Margin="418,62,0,0" VerticalAlignment="Top" Width="173"/>
+        <Image HorizontalAlignment="Left" Name="obrazOdcisk" Height="180" Margin="605,62,0,0" VerticalAlignment="Top" Width="173"/>
+        <GroupBox Header="Kolor oczu" Margin="30,203,400,33"/>
+        <RadioButton Name="niebieskieRadio" Content="niebieskie" HorizontalAlignment="Left" Margin="73,249,0,0" VerticalAlignment="Top"/>
+        <RadioButton Name="zieloneRadio" Content="zielone" HorizontalAlignment="Left" Margin="73,280,0,0" VerticalAlignment="Top"/>
+        <RadioButton Name="piwneRadio" Content="piwne" HorizontalAlignment="Left" Margin="73,310,0,0" VerticalAlignment="Top"/>
+        <Button Content="OK" HorizontalAlignment="Left" Margin="524,273,0,0" VerticalAlignment="Top" Width="142" Height="34" Click="OK_Btn"/>
+    </Grid>
+</Window>
